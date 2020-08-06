@@ -1,10 +1,10 @@
 class Particle {
-    constructor(x, y,r) {
+    constructor(x, y) {
 
         var options ={
-            restitution:0.4
+            restitution:0.7
         }
-        this.r=r;
+        this.r=10;
       
         this.body = Bodies.circle(x, y, this.r,options);       
         this.color=color(random(0, 255), random(0, 255), random(0, 255));
